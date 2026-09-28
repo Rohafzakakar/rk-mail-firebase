@@ -1,0 +1,106 @@
+html, body, #root {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #fcf8fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.dashboard-layout {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fcf8fa;
+}
+
+.dashboard-header {
+  background: #ffffff !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px !important;
+  height: 64px;
+  box-shadow: 0 2px 8px rgba(219, 39, 119, 0.04);
+  border-bottom: 2px solid #f472b6;
+  z-index: 10;
+}
+
+.logo-text {
+  color: #db2777; 
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.main-content-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #fbcfe8;
+  box-shadow: 0 4px 12px rgba(219, 39, 119, 0.02);
+  min-height: calc(100vh - 110px);
+}
+
+.folder-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.compose-btn {
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  height: 46px !important;
+  background: #db2777 !important;
+  border-color: #db2777 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(219, 39, 119, 0.3) !important;
+  transition: all 0.3s ease;
+}
+
+.compose-btn:hover {
+  background: #be185d !important;
+  border-color: #be185d !important;
+}
+
+.ant-menu-item-selected {
+  background-color: #fce7f3 !important;
+  color: #db2777 !important;
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    display: none !important; 
+  }
+  
+  .main-content-box {
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  .folder-header-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ant-modal {
+    max-width: 95% !important;
+    margin: 10px auto !important;
+  }
+  
+  .ant-modal-body {
+    padding: 12px !important;
+  }
+  
+  .ant-form-item-label label {
+    font-size: 13px !important;
+  }
+  
+  .ant-input, .ant-input-textarea {
+    font-size: 14px !important;
+  }
+}
